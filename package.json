@@ -6,8 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx prisma generate"
   },
+  "packageManager": "npm@10.2.4 --legacy-peer-deps",
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.4",
     "@google/generative-ai": "^0.22.0",
