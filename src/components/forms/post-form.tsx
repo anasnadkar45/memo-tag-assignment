@@ -73,6 +73,7 @@ export default function PostForm() {
               placeholder="Write your community post here..."
               name="content"
               value={content}
+              onChange={(e) => setContent(e.target.value)}
               rows={5}
             />
             {state?.errors?.content && (
